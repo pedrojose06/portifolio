@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section className="flex h-screenDvh flex-col py-24 md:flex-row">
+    <section className="flex h-auto min-h-screenDvh flex-col py-24 md:flex-row">
       <div className="flex flex-1 flex-col items-center justify-around">
         <p>
           Hello! I’m Baptiste and my passion is creating all sorts of things
@@ -28,17 +28,10 @@ const About = () => {
           tech jobs & life.
         </p>
       </div>
-      <div className=" flex flex-1 items-center justify-center">
-        <div className="size-full">
-          <div className="relative md:left-1/4">
-            <canvas className="absolute top-10 left-10 size-80 bg-primary">
-              &nbsp
-            </canvas>
-            <canvas className="absolute top-8 left-8 size-80 bg-gray-300">
-              &nbsp
-            </canvas>
-          </div>
-        </div>
+      <div className=" flex min-h-80 min-w-80 flex-1 items-center justify-center p-8">
+        <canvas className=" top-8 left-8 size-80 bg-gray-300 shadow-[10px_10px_0px_0px_rgba(100,_255,_218,_1)]">
+          &nbsp
+        </canvas>
       </div>
     </section>
   )
