@@ -20,8 +20,7 @@ const NavBarItem = ({ title, path }: INavBarItem) => {
       whileHover={{
         backgroundColor: '#64FFDA',
       }}
-      // transition={{ scale: { type: 'spring', stiffness: 500 } }}
-      className="flex h-16 w-full items-center justify-center hover:cursor-pointer hover:text-background"
+      className="flex h-14 w-full items-center justify-center border-b-[0.5px] border-b-primary p-1 text-sm hover:cursor-pointer hover:text-background"
     >
       {title}
     </motion.a>

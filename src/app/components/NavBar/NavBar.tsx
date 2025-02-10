@@ -9,9 +9,9 @@ import useDevice from '@/app/hooks/useDevice'
 import { useState } from 'react'
 
 const items = [
-  { title: 'Home', path: '/' },
-  { title: 'About', path: '/about' },
-  { title: 'Contact', path: '/contact' },
+  { title: 'home', path: '/' },
+  { title: 'about', path: '/about' },
+  { title: 'contact', path: '/contact' },
 ]
 
 const NavBar = () => {
@@ -32,7 +32,7 @@ const NavBar = () => {
         key="box"
         animate={animateNav}
         transition={transitionNav}
-        className="border2 flex w-full flex-col items-center justify-between border-b-[0.5px] border-b-primary border-solid bg-background px-4 py-2 md:h-16 md:flex-row"
+        className="border2 fixed top-0 flex w-full flex-col items-center justify-between border-b-[0.5px] border-b-primary border-solid bg-background px-4 py-2 md:h-16 md:flex-row"
       >
         <NavBarLogo />
         <motion.div

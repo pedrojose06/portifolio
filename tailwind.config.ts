@@ -22,6 +22,14 @@ export default {
           700: '#0F172A',
         },
       },
+      height: {
+        screenDvh: 'calc(100vh - 4rem)',
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        code: ['Fira Code', 'monospace'],
+        fjalla: ['Fjalla One', 'serif'],
+      },
     },
   },
   plugins: [],
