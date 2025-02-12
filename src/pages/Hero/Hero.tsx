@@ -1,3 +1,5 @@
+import Button from '@/app/components/Button/Button'
+
 const Hero = () => {
   return (
     <section className="flex h-screenDvh w-full flex-col items-start justify-center font-code text-white md:w-1/2 md:p-0">
@@ -14,6 +16,9 @@ const Hero = () => {
         building scalable and high-performance web applications. I thrive on
         optimizing processes, modernizing legacy systems, and crafting seamless
         user experiences.
+      </div>
+      <div className="flex w-full justify-center pt-16 md:justify-start">
+        <Button>Download my resume!</Button>
       </div>
     </section>
   )
