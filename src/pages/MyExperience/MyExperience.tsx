@@ -30,7 +30,7 @@ const experiences = [
 
 const MyExperience = () => {
   return (
-    <section className="flex w-full flex-col items-start justify-center py-24 md:w-1/2">
+    <section className="flex h-screenDvh w-full flex-col items-start justify-center py-24 md:w-1/2">
       {experiences.map((experience, index) => (
         <div key={experience.title} className="flex">
           <div className="relative mr-4 flex flex-col items-center">
