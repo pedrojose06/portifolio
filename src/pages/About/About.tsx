@@ -40,7 +40,7 @@ const About = () => {
           experience with testing frameworks like Vitest and Jest, ensuring code
           quality and performance.
         </p>
-        <p className="pt-2text-justify">
+        <p className="pt-2 text-justify">
           Beyond coding, I love collaborating with diverse teams, sharing
           knowledge, and fostering a positive and inclusive work environment.
           For me, teamwork, empathy, and creativity are key elements in building

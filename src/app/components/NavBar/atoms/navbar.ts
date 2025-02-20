@@ -1,5 +1,5 @@
 import { atom } from 'jotai'
 
-const navbarAtom = atom(false)
-
-export default navbarAtom
+const showNavbarAtom = atom(false)
+const showNavbarItemsAtom = atom(false)
+export { showNavbarAtom, showNavbarItemsAtom }

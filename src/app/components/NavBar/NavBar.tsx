@@ -4,20 +4,19 @@ import NavBarItem from '@/app/features/NavBarItem/NavBarItem'
 import NavBarLogo from '@/app/features/NavbarLogo/NavBarLogo'
 import { useAtom } from 'jotai'
 import { AnimatePresence, motion } from 'motion/react'
-import navbarAtom from './atoms/navbar'
+import { showNavbarAtom, showNavbarItemsAtom } from './atoms/navbar'
 import useDevice from '@/app/hooks/useDevice'
-import { useState } from 'react'
 
 const items = [
-  { title: 'home', path: '/' },
-  { title: 'about', path: '/about' },
-  { title: 'experiences', path: '/my-experiences' },
-  { title: 'contact', path: '/contact' },
+  { title: 'home', path: 'hero' },
+  { title: 'about', path: 'about' },
+  { title: 'experiences', path: 'my-experiences' },
+  { title: 'contact', path: 'contact' },
 ]
 
 const NavBar = () => {
-  const [showMenu] = useAtom(navbarAtom)
-  const [showMenuItens, setShowMenuItens] = useState(showMenu)
+  const [showMenu] = useAtom(showNavbarAtom)
+  const [showMenuItens, setShowMenuItens] = useAtom(showNavbarItemsAtom)
   const { isMobile } = useDevice()
 
   const animateNav = isMobile

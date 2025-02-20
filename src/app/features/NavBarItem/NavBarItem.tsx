@@ -1,6 +1,10 @@
+import {
+  showNavbarAtom,
+  showNavbarItemsAtom,
+} from '@/app/components/NavBar/atoms/navbar'
 import useDevice from '@/app/hooks/useDevice'
-import { motion } from 'motion/react'
-
+import { motion } from 'framer-motion'
+import { useAtom } from 'jotai'
 interface INavBarItem {
   title: string
   path: string
@@ -8,10 +12,20 @@ interface INavBarItem {
 
 const NavBarItem = ({ title, path }: INavBarItem) => {
   const { isMobile } = useDevice()
+  const [, setShowMenuItems] = useAtom(showNavbarItemsAtom)
+  const [, setShowMenu] = useAtom(showNavbarAtom)
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault()
+    const sectionPath = document.getElementById(path)
+    sectionPath?.scrollIntoView({ behavior: 'smooth' })
+    setShowMenu(false)
+    setShowMenuItems(false)
+  }
 
   return (
     <motion.a
-      href={path}
+      onClick={handleClick}
       initial={{
         backgroundColor: '#112240',
         borderBottom: isMobile ? 'none' : '0.5px solid #64FFDA',

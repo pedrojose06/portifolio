@@ -3,7 +3,10 @@ import Button from '@/app/components/Button/Button'
 
 const Contact = () => {
   return (
-    <section className="flex h-screenDvh w-full flex-col items-center justify-evenly py-24">
+    <section
+      id="contact"
+      className="flex h-screenDvh w-full flex-col items-center justify-evenly py-24"
+    >
       <p className="text-2xl text-blue-100 ">
         I'm a very communicative person and I love to talk, so if you think we
         have something to discuss, let me know!

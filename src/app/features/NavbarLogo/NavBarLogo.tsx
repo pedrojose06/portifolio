@@ -1,4 +1,4 @@
-import navbarAtom from '@/app/components/NavBar/atoms/navbar'
+import { showNavbarAtom } from '@/app/components/NavBar/atoms/navbar'
 import { useAtom } from 'jotai'
 import { Fragment } from 'react'
 import { MdKeyboardArrowDown } from 'react-icons/md'
@@ -6,7 +6,7 @@ import { motion } from 'motion/react'
 import useDevice from '@/app/hooks/useDevice'
 
 const NavBarLogo = () => {
-  const [show, setShow] = useAtom(navbarAtom)
+  const [show, setShow] = useAtom(showNavbarAtom)
   const { isMobile } = useDevice()
 
   return (
