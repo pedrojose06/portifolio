@@ -46,9 +46,6 @@ const About = () => {
           For me, teamwork, empathy, and creativity are key elements in building
           great products and impactful solutions.
         </p>
-        <p className="pt-2 md:text-justify">
-          Let’s connect and create something amazing together!
-        </p>
       </div>
       <div className="flex min-h-80 min-w-80 flex-1 items-center justify-center py-8 md:px-8">
         <Image
