@@ -1,5 +1,4 @@
 'use client'
-import useDevice from '@/app/hooks/useDevice'
 import { motion } from 'motion/react'
 import { MouseEventHandler } from 'react'
 
@@ -9,8 +8,6 @@ interface ButtonProps {
 }
 
 const Button = ({ children, onClick, ...props }: ButtonProps) => {
-  const { isMobile } = useDevice()
-
   return (
     <motion.button
       className="box-border rounded-md border border-primary border-b-[0.5px] border-b-primary border-solid px-16 py-4 text-primary"

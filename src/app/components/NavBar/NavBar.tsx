@@ -11,6 +11,7 @@ import { useState } from 'react'
 const items = [
   { title: 'home', path: '/' },
   { title: 'about', path: '/about' },
+  { title: 'experiences', path: '/my-experiences' },
   { title: 'contact', path: '/contact' },
 ]
 
@@ -32,11 +33,11 @@ const NavBar = () => {
         key="box"
         animate={animateNav}
         transition={transitionNav}
-        className="border2 fixed top-0 flex w-full flex-col items-center justify-between border-b-[0.5px] border-b-primary border-solid bg-background px-4 py-2 md:h-16 md:flex-row"
+        className="border2 fixed top-0 z-10 flex w-full flex-col items-center justify-between border-b-[0.5px] border-b-primary border-solid bg-background px-4 py-2 md:h-16 md:flex-row"
       >
         <NavBarLogo />
         <motion.div
-          className="w-1/4"
+          className="w-1/2"
           animate={isMobile ? { opacity: showMenu ? 1 : 0 } : {}}
           onAnimationComplete={() =>
             setTimeout(() => {

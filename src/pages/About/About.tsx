@@ -1,9 +1,11 @@
-import profilePic from '/public/images/me.jpeg'
 import Image from 'next/image'
 
 const About = () => {
   return (
-    <section className="flex h-auto min-h-screenDvh flex-col py-24 md:flex-row">
+    <section
+      className="flex h-auto min-h-screenDvh flex-col py-24 md:flex-row"
+      id="about"
+    >
       <div className="flex flex-1 flex-col justify-around">
         <p className="pt-2">
           Hello! I’m Pedro Moraes, a Front-End Developer with Full Stack
@@ -48,9 +50,9 @@ const About = () => {
           Let’s connect and create something amazing together!
         </p>
       </div>
-      <div className=" flex min-h-80 min-w-80 flex-1 items-center justify-center py-8 md:px-8">
+      <div className="flex min-h-80 min-w-80 flex-1 items-center justify-center py-8 md:px-8">
         <Image
-          src={profilePic}
+          src="/images/me.jpeg"
           alt="Profile Picture"
           width={150}
           height={150}

@@ -2,7 +2,7 @@ import Button from '@/app/components/Button/Button'
 
 const Hero = () => {
   return (
-    <section className="mt-16 flex min-h-screenDvh w-full flex-col items-start justify-center font-code text-white md:mt-0 md:w-1/2 md:p-0">
+    <section className="mt-16 flex min-h-screenDvh w-full flex-col items-start justify-center font-code text-white md:mt-0 md:h-screenDvh md:w-1/2 md:p-0">
       <div className="text-primary text-xs">Hi, my name is</div>
       <div className="py-5 font-fjalla text-6xl text-blue-100">
         Pedro Moraes.
