@@ -1,3 +1,6 @@
+import profilePic from '/public/images/me.jpeg'
+import Image from 'next/image'
+
 const About = () => {
   return (
     <section className="flex h-auto min-h-screenDvh flex-col py-24 md:flex-row">
@@ -46,9 +49,13 @@ const About = () => {
         </p>
       </div>
       <div className=" flex min-h-80 min-w-80 flex-1 items-center justify-center py-8 md:px-8">
-        <canvas className=" top-8 left-8 size-80 bg-gray-300 shadow-[10px_10px_0px_0px_rgba(100,_255,_218,_1)]">
-          &nbsp
-        </canvas>
+        <Image
+          src={profilePic}
+          alt="Profile Picture"
+          width={150}
+          height={150}
+          className="top-8 left-8 size-80 shadow-[10px_10px_0px_0px_rgba(100,_255,_218,_1)]"
+        />
       </div>
     </section>
   )

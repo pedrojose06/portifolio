@@ -1,4 +1,6 @@
 'use client'
+import useDevice from '@/app/hooks/useDevice'
+import { motion } from 'motion/react'
 import { MouseEventHandler } from 'react'
 
 interface ButtonProps {
@@ -7,15 +9,28 @@ interface ButtonProps {
 }
 
 const Button = ({ children, onClick, ...props }: ButtonProps) => {
+  const { isMobile } = useDevice()
+
   return (
-    <button
-      className="rounded-md border-[1px] border-primary border-solid px-16 py-4 text-primary"
+    <motion.button
+      className="box-border rounded-md border border-primary border-b-[0.5px] border-b-primary border-solid px-16 py-4 text-primary"
       type="button"
       onClick={onClick}
       {...props}
+      initial={{
+        backgroundColor: '#112240',
+      }}
+      whileHover={{
+        color: '#112240',
+        backgroundColor: '#64FFDA',
+      }}
+      whileTap={{
+        color: '#112240',
+        backgroundColor: '#64FFDA',
+      }}
     >
       {children}
-    </button>
+    </motion.button>
   )
 }
 export default Button
