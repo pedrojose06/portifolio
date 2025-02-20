@@ -32,7 +32,7 @@ const NavBar = () => {
         key="box"
         animate={animateNav}
         transition={transitionNav}
-        className="border2 fixed top-0 z-10 flex w-full flex-col items-center justify-between border-b-[0.5px] border-b-primary border-solid bg-background px-4 py-2 md:h-16 md:flex-row"
+        className="border2 fixed top-0 z-10 flex w-full flex-col items-center justify-between border-b-[0.5px] border-b-primary border-solid bg-background px-4 py-2 font-fira-code md:h-16 md:flex-row"
       >
         <NavBarLogo />
         <motion.div

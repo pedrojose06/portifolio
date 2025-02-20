@@ -1,9 +1,11 @@
-import NavBar from '@/app/components/NavBar/NavBar'
-import Hero from '../Hero/Hero'
-import Divider from '@/app/components/Divider/Divider'
-import About from '../About/About'
-import MyExperience from '../MyExperience/MyExperience'
-import Contact from '../Contact/Contact'
+import { lazy } from 'react'
+
+const NavBar = lazy(() => import('@/app/components/NavBar/NavBar'))
+const Hero = lazy(() => import('../Hero/Hero'))
+const Divider = lazy(() => import('@/app/components/Divider/Divider'))
+const About = lazy(() => import('../About/About'))
+const MyExperience = lazy(() => import('../MyExperience/MyExperience'))
+const Contact = lazy(() => import('../Contact/Contact'))
 
 const HomePage = () => {
   return (

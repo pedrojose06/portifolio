@@ -1,15 +1,11 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Fjalla_One } from 'next/font/google'
 import './globals.css'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const fjallaOne = Fjalla_One({
+  variable: '--font-fjalla-one',
   subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+  weight: '400',
 })
 
 export const metadata: Metadata = {
@@ -25,12 +21,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} w-dvw bg-background text-secondary antialiased`}
+        className={`${fjallaOne.variable} font- w-dvw bg-background text-secondary antialiased`}
       >
-        <style>
-          @import
-          url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-        </style>
         {children}
       </body>
     </html>
