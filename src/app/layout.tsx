@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fjallaOne.variable} font- w-dvw bg-background text-secondary antialiased`}
+        className={`${fjallaOne.variable} font- w-dvw overflow-x-hidden bg-background text-secondary antialiased`}
       >
         {children}
       </body>
