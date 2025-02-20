@@ -54,6 +54,7 @@ const About = () => {
           width={150}
           height={150}
           className="top-8 left-8 size-80 shadow-[10px_10px_0px_0px_rgba(100,_255,_218,_1)]"
+          loading="lazy"
         />
       </div>
     </section>

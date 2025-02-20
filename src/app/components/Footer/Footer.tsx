@@ -22,7 +22,7 @@ const socialMedias = [
 const Footer = () => {
   return (
     <footer>
-      <div className="flex min-h-72 flex-col items-center justify-around gap-44 border-t border-t-primary border-solid px-16 md:flex-row">
+      <article className="flex min-h-72 flex-col items-center justify-around gap-44 border-t border-t-primary border-solid px-16 md:flex-row">
         <div className="flex-1 py-4">
           <h4 className="text-blue-100">About me</h4>
           <p>I am a passionate developer building awesome web applications.</p>
@@ -39,20 +39,18 @@ const Footer = () => {
           <div className="flex w-full justify-evenly space-x-4">
             {socialMedias.map((socialMedia) => (
               <a
-                href="#"
-                onClick={() =>
-                  socialMedia.url && window.open(socialMedia.url, '_blank')
-                }
+                href={socialMedia.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 key={socialMedia.name}
+                aria-label={`Follow me on ${socialMedia.name}`}
               >
                 {socialMedia.icon}
               </a>
             ))}
           </div>
         </div>
-      </div>
+      </article>
       <div className=" py-4 text-center text-blue-200 text-sm">
         &copy; {new Date().getFullYear()} PEDRO JOSE TRINDADE DE MORAES LTDA.
         All rights reserved.
