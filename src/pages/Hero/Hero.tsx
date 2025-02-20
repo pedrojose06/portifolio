@@ -1,8 +1,9 @@
+'use client'
 import Button from '@/app/components/Button/Button'
 
 const Hero = () => {
   return (
-    <section className="mt-16 flex min-h-screenDvh w-full flex-col items-start justify-center font-code text-white md:mt-0 md:h-screenDvh md:w-1/2 md:p-0">
+    <section className="mt-20 mb-8 flex min-h-screenDvh w-full flex-col items-start justify-center font-code text-white md:mt-0 md:h-screenDvh md:w-1/2 md:p-0">
       <div className="text-primary text-xs">Hi, my name is</div>
       <div className="py-5 font-fjalla text-6xl text-blue-100">
         Pedro Moraes.
@@ -18,7 +19,16 @@ const Hero = () => {
         user experiences.
       </div>
       <div className="flex w-full justify-center pt-8 md:justify-start md:pt-16">
-        <Button>Download my resume!</Button>
+        <Button
+          onClick={() =>
+            window.open(
+              'https://drive.google.com/file/d/15S0UVnO_MqhmPbRpqIOdhzAebsN-sGY2/view?usp=sharing',
+              '_blank'
+            )
+          }
+        >
+          Download my resume!
+        </Button>
       </div>
     </section>
   )

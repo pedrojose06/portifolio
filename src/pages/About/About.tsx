@@ -3,18 +3,18 @@ import Image from 'next/image'
 const About = () => {
   return (
     <section
-      className="flex h-auto min-h-screenDvh flex-col py-24 md:flex-row"
+      className="flex h-auto min-h-screenDvh flex-col py-12 md:flex-row md:py-24"
       id="about"
     >
       <div className="flex flex-1 flex-col justify-around">
-        <p className="pt-2">
+        <p className="pt-2 text-justify">
           Hello! I’m Pedro Moraes, a Front-End Developer with Full Stack
           experience, passionate about building user-friendly and
           high-performance applications. I started my journey in web development
           in 2019, and since then, I’ve had the opportunity to work on diverse
           projects across different industries.
         </p>
-        <p className="pt-2">
+        <p className="pt-2 text-justify">
           I worked for the first time as a Front-End Developer in 2019 at
           Moovefy, where I gained hands-on experience in modern web
           technologies. Over the years, I have contributed to scalable
@@ -22,7 +22,7 @@ const About = () => {
           systems like <span className="text-primary">AngularJS</span> to modern
           frameworks such as <span className="text-primary">React</span>.
         </p>
-        <p className="pt-2">
+        <p className="pt-2 text-justify">
           I’ve also had the opportunity to work with various technologies,
           including <span className="text-primary">React</span>,{' '}
           <span className="text-primary">Vue.js</span>,{' '}
@@ -40,13 +40,13 @@ const About = () => {
           experience with testing frameworks like Vitest and Jest, ensuring code
           quality and performance.
         </p>
-        <p className="pt-2">
+        <p className="pt-2text-justify">
           Beyond coding, I love collaborating with diverse teams, sharing
           knowledge, and fostering a positive and inclusive work environment.
           For me, teamwork, empathy, and creativity are key elements in building
           great products and impactful solutions.
         </p>
-        <p className="pt-2">
+        <p className="pt-2 text-justify">
           Let’s connect and create something amazing together!
         </p>
       </div>

@@ -1,10 +1,6 @@
 'use client'
 import Button from '@/app/components/Button/Button'
 
-const handleClick = () => {
-  alert('Hey! I would love to talk to you!')
-}
-
 const Contact = () => {
   return (
     <section className="flex h-screenDvh w-full flex-col items-center justify-evenly py-24">
@@ -12,7 +8,11 @@ const Contact = () => {
         I'm a very communicative person and I love to talk, so if you think we
         have something to discuss, let me know!
       </p>
-      <Button onClick={handleClick}>Hey!</Button>
+      <Button
+        onClick={() => window.open('https://whatsa.me/5511994091820', '_blank')}
+      >
+        Hey!
+      </Button>
     </section>
   )
 }
