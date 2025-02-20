@@ -12,7 +12,7 @@ const Hero = () => {
         Pedro Moraes.
         <br />
         <span className="font-fjalla text-blue-200">
-          I'm a ReatJS developer.
+          I'm a ReactJS developer.
         </span>
       </div>
       <div className="text-lg">
