@@ -1,0 +1,37 @@
+{
+  "Hero": {
+    "title": "Oi, meu nome é",
+    "currentPosition": "Sou um desenvolvedor ReactJS.",
+    "synopsis": "Sou um Desenvolvedor Frontend com experiência Full Stack, especializado na criação de aplicações web escaláveis e de alto desempenho. Gosto de otimizar processos, modernizar sistemas legados e criar experiências de usuário intuitivas.",
+    "downloadCVButton": "Baixe meu currículo!"
+  },
+
+  "About": {
+    "firstParagraph": "Olá! Sou Pedro Moraes, um Desenvolvedor Front-End com experiência Full Stack, apaixonado por construir aplicações de alto desempenho e fáceis de usar. Iniciei minha jornada no desenvolvimento web em 2019 e, desde então, tive a oportunidade de trabalhar em diversos projetos em diferentes setores.",
+    "secondParagraph": "Trabalhei pela primeira vez como Desenvolvedor Front-End em 2019 na Moovefy, onde adquiri experiência prática com tecnologias web modernas. Ao longo dos anos, contribuí para soluções escaláveis, otimizei processos e liderei transições de sistemas legados, como AngularJS, para frameworks modernos como <textprimary>React</textprimary>.",
+    "thirdParagraph": "Também tive a oportunidade de trabalhar com diversas tecnologias, incluindo <textprimary>React</textprimary>, <textprimary>Vue.js</textprimary>, <textprimary>TypeScript</textprimary>, <textprimary>JavaScript</textprimary>, <textprimary>TailwindCSS</textprimary>, <textprimary>Styled Components</textprimary>, <textprimary>.NET</textprimary>, <textprimary>C#</textprimary>, <textprimary>SQL Server</textprimary>, <textprimary>PostgreSQL</textprimary>, <textprimary>Azure</textprimary>, <textprimary>Docker</textprimary>, <textprimary>e mais</textprimary>. Além disso, tenho experiência com frameworks de teste como Vitest e Jest, garantindo qualidade e desempenho do código.",
+    "fourthParagraph": "Além da programação, adoro colaborar com equipes diversas, compartilhar conhecimento e promover um ambiente de trabalho positivo e inclusivo. Para mim, trabalho em equipe, empatia e criatividade são elementos-chave na construção de ótimos produtos e soluções impactantes."
+  },
+  "Contact": {
+    "content": "Vamos nos conectar e criar algo incrível juntos!"
+  },
+  "Divider": {
+    "about": "Sobre mim",
+    "experiences": "Minhas Experiências",
+    "contact": "Quer conversar?"
+  },
+  "Footer": {
+    "aboutMe": "Sobre mim",
+    "aboutMeContent": "Sou um desenvolvedor apaixonado por criar aplicações web incríveis.",
+    "contact": "Fale comigo",
+    "phone": "Telefone",
+    "followme": "Me siga",
+    "allRights": "Todos os direitos reservados"
+  },
+  "NavBar": {
+    "home": "Início",
+    "about": "Sobre",
+    "experiences": "Experiências",
+    "contact": "Contato"
+  }
+}

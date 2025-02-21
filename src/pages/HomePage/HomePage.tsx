@@ -13,11 +13,11 @@ const HomePage = () => {
       <NavBar />
       <div className="container mx-auto h-full w-full p-4">
         <Hero />
-        <Divider title="About" />
+        <Divider title="about" />
         <About />
-        <Divider title="My experiences" />
+        <Divider title="experiences" />
         <MyExperience />
-        <Divider title="Wanna Talk ?" />
+        <Divider title="contact" />
         <Contact />
       </div>
     </>
