@@ -1,4 +1,5 @@
-import { getTranslations } from 'next-intl/server'
+'use client'
+import { useTranslations } from 'next-intl'
 import { IoLogoLinkedin, IoLogoGithub, IoLogoInstagram } from 'react-icons/io5'
 
 const socialMedias = [
@@ -19,8 +20,8 @@ const socialMedias = [
   },
 ]
 
-const Footer = async () => {
-  const t = await getTranslations('Footer')
+const Footer = () => {
+  const t = useTranslations('Footer')
   return (
     <footer>
       <article className="flex min-h-72 flex-col items-center justify-around gap-44 border-t border-t-primary border-solid px-16 md:flex-row">

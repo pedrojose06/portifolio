@@ -1,11 +1,11 @@
-import { getTranslations } from 'next-intl/server'
+import { useTranslations } from 'next-intl'
 
 interface IDivider {
   title: string
 }
 
-const Divider = async ({ title }: IDivider) => {
-  const t = await getTranslations('Divider')
+const Divider = ({ title }: IDivider) => {
+  const t = useTranslations('Divider')
   return (
     <section className="my-4 flex w-full items-center justify-center">
       {title === 'Wanna Talk ?' && (

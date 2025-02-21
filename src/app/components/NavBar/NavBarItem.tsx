@@ -16,7 +16,6 @@ const NavBarItem = ({ title, path }: INavBarItem) => {
   const { isMobile } = useDevice()
   const [, setShowMenuItems] = useAtom(showNavbarItemsAtom)
   const [, setShowMenu] = useAtom(showNavbarAtom)
-
   const t = useTranslations('NavBar')
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
