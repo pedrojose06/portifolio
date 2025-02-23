@@ -1,11 +1,11 @@
 import { lazy } from 'react'
 
 const NavBar = lazy(() => import('@/app/components/NavBar/NavBar'))
-const Hero = lazy(() => import('../Hero/Hero'))
+const Hero = lazy(() => import('../hero/page'))
 const Divider = lazy(() => import('@/app/components/Divider/Divider'))
-const About = lazy(() => import('../About/About'))
-const MyExperience = lazy(() => import('../MyExperience/MyExperience'))
-const Contact = lazy(() => import('../Contact/Contact'))
+const About = lazy(() => import('../about/page'))
+const MyExperience = lazy(() => import('../myExperience/page'))
+const Contact = lazy(() => import('../contact/page'))
 
 const HomePage = () => {
   return (

@@ -1,7 +1,7 @@
 'use client'
 
-import NavBarItem from '@/app/features/NavBarItem/NavBarItem'
-import NavBarLogo from '@/app/features/NavbarLogo/NavBarLogo'
+import NavBarItem from '@/app/components/NavBar/NavBarItem'
+import NavBarLogo from '@/app/components/NavBar/NavBarLogo'
 import { useAtom } from 'jotai'
 import { AnimatePresence, motion } from 'motion/react'
 import { showNavbarAtom, showNavbarItemsAtom } from './atoms/navbar'
