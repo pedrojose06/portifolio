@@ -1,3 +1,4 @@
+'use client'
 import {
   showNavbarAtom,
   showNavbarItemsAtom,
@@ -5,6 +6,7 @@ import {
 import useDevice from '@/app/hooks/useDevice'
 import { motion } from 'framer-motion'
 import { useAtom } from 'jotai'
+import { useTranslations } from 'next-intl'
 interface INavBarItem {
   title: string
   path: string
@@ -14,6 +16,8 @@ const NavBarItem = ({ title, path }: INavBarItem) => {
   const { isMobile } = useDevice()
   const [, setShowMenuItems] = useAtom(showNavbarItemsAtom)
   const [, setShowMenu] = useAtom(showNavbarAtom)
+
+  const t = useTranslations('NavBar')
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault()
@@ -36,7 +40,7 @@ const NavBarItem = ({ title, path }: INavBarItem) => {
       }}
       className="flex h-14 w-full items-center justify-center border-b-[0.5px] border-b-primary p-1 text-sm hover:cursor-pointer hover:text-background"
     >
-      {title}
+      {t(title)}
     </motion.a>
   )
 }
