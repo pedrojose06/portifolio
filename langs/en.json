@@ -1,0 +1,37 @@
+{
+  "Hero": {
+    "title": "Hi, my name is",
+    "currentPosition": "I'm a ReactJS developer.",
+    "synopsis": "I'm a Frontend Developer with Full Stack experience, specialized in building scalable and high-performance web applications. I thrive on optimizing processes, modernizing legacy systems, and crafting seamless user experiences.",
+    "downloadCVButton": "Download my resume!"
+  },
+
+  "About": {
+    "firstParagraph": "Hello! I’m Pedro Moraes, a Front-End Developer with Full Stack experience, passionate about building user-friendly and high-performance applications. I started my journey in web development in 2019, and since then, I’ve had the opportunity to work on diverse projects across different industries.",
+    "secondParagraph": "I worked for the first time as a Front-End Developer in 2019 at Moovefy, where I gained hands-on experience in modern web technologies. Over the years, I have contributed to scalable solutions, optimized processes, and led transitions from legacy systems like AngularJS to modern frameworks such as <textprimary>React</textprimary>.",
+    "thirdParagraph": "I’ve also had the opportunity to work with various technologies, including <textprimary>React</textprimary>, <textprimary>Vue.js</textprimary>, <textprimary>TypeScript</textprimary>, <textprimary>JavaScript</textprimary>, <textprimary>TailwindCSS</textprimary>, <textprimary>Styled Components</textprimary>, <textprimary>.NET</textprimary>, <textprimary>C#</textprimary>, <textprimary>SQL Server</textprimary>, <textprimary>PostgreSQL</textprimary>, <textprimary>Azure</textprimary>, <textprimary>Docker</textprimary>,<textprimary>and more</textprimary>. Additionally, I have experience with testing frameworks like Vitest and Jest, ensuring code quality and performance.",
+    "fourthParagraph": "Beyond coding, I love collaborating with diverse teams, sharing knowledge, and fostering a positive and inclusive work environment. For me, teamwork, empathy, and creativity are key elements in building great products and impactful solutions."
+  },
+  "Contact": {
+    "content": "Let’s connect and create something amazing together!"
+  },
+  "Divider": {
+    "about": "About",
+    "experiences": "My Experiences",
+    "contact": "Wanna Talk?"
+  },
+  "Footer": {
+    "aboutMe": "About me",
+    "aboutMeContent": "I am a passionate developer building awesome web applications.",
+    "contact": "Contact me",
+    "phone": "Phone",
+    "followme": "Follow me",
+    "allRights": "All rights reserved"
+  },
+  "NavBar": {
+    "home": "Home",
+    "about": "About",
+    "experiences": "Experiences",
+    "contact": "Contact"
+  }
+}
