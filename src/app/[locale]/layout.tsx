@@ -1,14 +1,16 @@
 import { Locale, routing } from '@/i18n/routing'
+import { Fjalla_One } from 'next/font/google'
 import type { Metadata } from 'next'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import { notFound } from 'next/navigation'
+import '../globals.css'
 
-const fjaOne = {
+const fjallaOne = Fjalla_One({
   variable: '--font-fjalla-one',
   subsets: ['latin'],
   weight: '400',
-}
+})
 
 export const metadata: Metadata = {
   title: 'Pedro Moraes',
@@ -35,7 +37,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fjaOne.variable} font- w-dvw overflow-x-hidden bg-background text-secondary antialiased`}
+        className={`${fjallaOne.variable} font- w-dvw overflow-x-hidden bg-background text-secondary antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
           {children}
