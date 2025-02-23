@@ -1,51 +1,27 @@
+import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
 
-const About = () => {
+const About = async () => {
+  const t = await getTranslations('About')
+
   return (
     <section
       className="flex h-auto min-h-screenDvh flex-col py-12 md:flex-row md:py-24"
       id="about"
     >
       <div className="flex flex-1 flex-col justify-around">
+        <p className="pt-2 md:text-justify">{t('firstParagraph')}</p>
         <p className="pt-2 md:text-justify">
-          Hello! I’m Pedro Moraes, a Front-End Developer with Full Stack
-          experience, passionate about building user-friendly and
-          high-performance applications. I started my journey in web development
-          in 2019, and since then, I’ve had the opportunity to work on diverse
-          projects across different industries.
+          {t.rich('secondParagraph', {
+            textprimary: (html) => <span className="text-primary">{html}</span>,
+          })}
         </p>
         <p className="pt-2 md:text-justify">
-          I worked for the first time as a Front-End Developer in 2019 at
-          Moovefy, where I gained hands-on experience in modern web
-          technologies. Over the years, I have contributed to scalable
-          solutions, optimized processes, and led transitions from legacy
-          systems like <span className="text-primary">AngularJS</span> to modern
-          frameworks such as <span className="text-primary">React</span>.
+          {t.rich('thirdParagraph', {
+            textprimary: (html) => <span className="text-primary">{html}</span>,
+          })}
         </p>
-        <p className="pt-2 md:text-justify">
-          I’ve also had the opportunity to work with various technologies,
-          including <span className="text-primary">React</span>,{' '}
-          <span className="text-primary">Vue.js</span>,{' '}
-          <span className="text-primary">TypeScript</span>,{' '}
-          <span className="text-primary">JavaScript</span>,{' '}
-          <span className="text-primary">TailwindCSS</span>,{' '}
-          <span className="text-primary">Styled Components</span>,{' '}
-          <span className="text-primary">.NET Core</span>,{' '}
-          <span className="text-primary">C#</span>,{' '}
-          <span className="text-primary">SQL Server</span>,{' '}
-          <span className="text-primary">PostgreSQL</span>,{' '}
-          <span className="text-primary">Azure</span>,{' '}
-          <span className="text-primary">Docker</span>,
-          <span className="text-primary">and more</span>. Additionally, I have
-          experience with testing frameworks like Vitest and Jest, ensuring code
-          quality and performance.
-        </p>
-        <p className="pt-2 md:text-justify">
-          Beyond coding, I love collaborating with diverse teams, sharing
-          knowledge, and fostering a positive and inclusive work environment.
-          For me, teamwork, empathy, and creativity are key elements in building
-          great products and impactful solutions.
-        </p>
+        <p className="pt-2 md:text-justify">{t('fourthParagraph')}</p>
       </div>
       <div className="flex min-h-80 min-w-80 flex-1 items-center justify-center py-8 md:px-8">
         <Image
