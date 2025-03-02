@@ -1,7 +1,7 @@
 {
   "Hero": {
     "title": "Hi, my name is",
-    "currentPosition": "I'm a ReactJS developer.",
+    "currentPosition": "I'm a ",
     "synopsis": "I'm a Frontend Developer with Full Stack experience, specialized in building scalable and high-performance web applications. I thrive on optimizing processes, modernizing legacy systems, and crafting seamless user experiences.",
     "downloadCVButton": "Download my resume!"
   },
