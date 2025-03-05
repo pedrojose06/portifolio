@@ -24,7 +24,7 @@ const Footer = () => {
   const t = useTranslations('Footer')
   return (
     <footer>
-      <article className="flex min-h-72 flex-col items-center justify-around gap-44 border-t border-t-primary border-solid px-16 md:flex-row">
+      <article className="flex min-h-72 flex-col items-center justify-around gap-44 border-t border-t-primary border-solid px-16 pt-16 md:flex-row">
         <div className="flex-1 py-4">
           <h4 className="text-blue-100">{t('aboutMe')}</h4>
           <p>{t('aboutMeContent')}</p>
