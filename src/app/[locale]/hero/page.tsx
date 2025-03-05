@@ -1,6 +1,6 @@
 'use client'
 import Button from '@/app/components/Button/Button'
-import Test from '@/app/components/Test/Test'
+import Test from '@/app/components/RotatingText/RotatingText'
 import { useTranslations } from 'next-intl'
 
 const Hero = () => {
